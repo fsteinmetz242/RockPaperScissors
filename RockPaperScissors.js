@@ -42,17 +42,12 @@ let sHuman = "";
 const argv = process.argv.slice(2); // Entferne zwei Elemente
 // Arg1 = The path to the Node.js executable (your installation of Node)
 // Arg2 = The path to the JavaScript file being executed (your file)
-console.log(
-  `Anzahl Argumente ${process.argv.length} | Liste der Argumente ${argv}`
-);
-
 if (process.argv.length < 3) {
   console.log("Keine Auswahl getroffen! Bitte erneut versuchen.");
   return;
 }
 
 sHuman = argv[0].toLowerCase();
-
 if (!myChooses.includes(sHuman)) {
   console.log("Falsche Eingabe. Erlaubt sind nur " + myChooses.join(" | "));
   return;
