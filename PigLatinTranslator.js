@@ -58,5 +58,5 @@ const wordArray = argv[0].split(" ");
 [...wordArray].forEach((singleWord) => {
   checkWord(singleWord);
 });
-console.log("Your text :" + argv[0]);
+console.log("Your text : " + argv[0]);
 console.log("Is in piglatin: " + pigLatinWords.join(" "));
