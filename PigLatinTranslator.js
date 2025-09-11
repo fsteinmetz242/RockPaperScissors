@@ -37,7 +37,6 @@ function checkWord(inputWord) {
     arrChars.push("y");
     pigLatinWord = arrChars.join("");
   }
-  console.log("Vokal: " + inputWord);
   if (regexVokalAnfang.test(inputWord)) {
     pigLatinWord = inputWord + "way";
   }
@@ -59,4 +58,5 @@ const wordArray = argv[0].split(" ");
 [...wordArray].forEach((singleWord) => {
   checkWord(singleWord);
 });
-console.log(pigLatinWords.join(" "));
+console.log("Your text :" + argv[0]);
+console.log("Is in piglatin: " + pigLatinWords.join(" "));
